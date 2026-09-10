@@ -6,6 +6,7 @@
   <meta name="description" content="日本株の仕込み候補を6つの評価軸で比較する投資分析ダッシュボード" />
   <title>TADYAM｜日本株スコア</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>.toolbar{grid-template-columns:1fr auto auto auto}@media(max-width:760px){.toolbar{grid-template-columns:1fr 1fr}.search{grid-column:1/-1}}</style>
 </head>
 <body>
   <header class="topbar">
@@ -35,7 +36,8 @@
     </nav>
 
     <section class="toolbar">
-      <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="4桁コード・会社名・テーマで検索" autocomplete="off" /></label>
+      <label class="search"><span>⌕</span><input id="searchInput" type="search" inputmode="numeric" placeholder="4桁コードを入力（例：1969）" autocomplete="off" /></label>
+      <button id="analyzeButton" class="primary">分析する</button>
       <select id="sortSelect" aria-label="並び順">
         <option value="score">総合点が高い順</option>
         <option value="buy">今仕込み点が高い順</option>
