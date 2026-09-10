@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="日本株の仕込み候補を6つの評価軸で比較する投資分析ダッシュボード" />
+  <title>TADYAM｜日本株スコア</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="TADYAM ホーム"><span class="brand-mark">T</span><span>TADYAM</span></a>
+    <div class="market-pill"><span class="pulse"></span> 日本株・分析モード</div>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">JAPAN STOCK INTELLIGENCE</p>
+        <h1>今、仕込める銘柄を<br><em>数字で絞り込む。</em></h1>
+        <p class="lead">業績・テーマ・割安度・チャート・需給・材料を、あなたの投資軸で総合評価。</p>
+      </div>
+      <div class="hero-score">
+        <span>現在の注目</span>
+        <strong id="heroCode">—</strong>
+        <b id="heroName">データ読込中</b>
+      </div>
+    </section>
+
+    <nav class="tabs" aria-label="メインメニュー">
+      <button class="tab active" data-view="ranking">ランキング</button>
+      <button class="tab" data-view="analysis">銘柄分析</button>
+      <button class="tab" data-view="watchlist">監視リスト <span id="watchCount">0</span></button>
+      <button class="tab" data-view="portfolio">保有株</button>
+    </nav>
+
+    <section class="toolbar">
+      <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="4桁コード・会社名・テーマで検索" autocomplete="off" /></label>
+      <select id="sortSelect" aria-label="並び順">
+        <option value="score">総合点が高い順</option>
+        <option value="buy">今仕込み点が高い順</option>
+        <option value="upside">上値余地が高い順</option>
+      </select>
+      <label class="file-button">CSV取込<input id="csvInput" type="file" accept=".csv,text/csv" /></label>
+    </section>
+
+    <section id="ranking" class="view active">
+      <div class="section-head"><div><p class="eyebrow">TODAY'S SCREEN</p><h2>今仕込み TOP10</h2></div><p id="dataDate" class="muted"></p></div>
+      <div id="rankingGrid" class="ranking-grid"></div>
+    </section>
+
+    <section id="analysis" class="view">
+      <div id="analysisPanel" class="analysis-panel"></div>
+    </section>
+
+    <section id="watchlist" class="view">
+      <div class="section-head"><div><p class="eyebrow">WATCH</p><h2>監視リスト</h2></div></div>
+      <div id="watchGrid" class="ranking-grid"></div>
+    </section>
+
+    <section id="portfolio" class="view">
+      <div class="section-head"><div><p class="eyebrow">PORTFOLIO</p><h2>保有株</h2></div><button id="addHolding" class="primary">＋ 保有株を追加</button></div>
+      <div class="portfolio-summary" id="portfolioSummary"></div>
+      <div class="table-wrap"><table><thead><tr><th>銘柄</th><th>保有数</th><th>取得単価</th><th>参考株価</th><th>評価損益</th><th></th></tr></thead><tbody id="portfolioRows"></tbody></table></div>
+    </section>
+
+    <p class="disclaimer">本アプリは分析補助ツールです。表示データはサンプル／手動更新を含み、投資判断を保証するものではありません。</p>
+  </main>
+
+  <dialog id="holdingDialog">
+    <form method="dialog" id="holdingForm">
+      <div class="dialog-head"><h3>保有株を追加</h3><button value="cancel" aria-label="閉じる">×</button></div>
+      <label>銘柄<select id="holdingStock"></select></label>
+      <label>保有株数<input id="holdingShares" type="number" min="1" step="1" required /></label>
+      <label>取得単価（円）<input id="holdingCost" type="number" min="1" step="0.1" required /></label>
+      <button class="primary full" value="default">保存する</button>
+    </form>
+  </dialog>
+  <script src="app.js"></script>
+</body>
+</html>
