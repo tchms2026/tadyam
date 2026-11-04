@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03 15:23 UTC",
+  "updated_at": "2026-11-04 15:36 UTC",
   "stocks": [
     {
       "code": "1414",
@@ -444,22 +444,22 @@
     {
       "code": "2638",
       "name": "グローバルX ロボティクス＆AI-日本株式 ETF",
-      "price": 2430.0,
-      "sma25": 2638.1,
-      "sma75": 2649.4,
-      "rsi14": 24.7,
-      "volume_ratio": 0.48,
-      "technical": 38,
-      "flow": 32,
-      "score": 36,
+      "price": 2382.0,
+      "sma25": 2626.4,
+      "sma75": 2645.2,
+      "rsi14": 23.9,
+      "volume_ratio": 1.23,
+      "technical": 37,
+      "flow": 51,
+      "score": 40,
       "action": "監視",
       "buy_zone": [
-        2558.9,
-        2664.5
+        2547.6,
+        2652.6
       ],
       "take": 3081.5,
-      "stop": 2187.0,
-      "upside": 27
+      "stop": 2143.8,
+      "upside": 29
     },
     {
       "code": "2760",
