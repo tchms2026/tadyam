@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23 19:23 UTC",
+  "updated_at": "2026-11-24 18:59 UTC",
   "stocks": [
     {
       "code": "1414",
@@ -169,9 +169,9 @@
       "sma75": 2198.6,
       "rsi14": 39.3,
       "volume_ratio": 0.9,
-      "technical": 46,
+      "technical": 45,
       "flow": 43,
-      "score": 45,
+      "score": 44,
       "action": "監視",
       "buy_zone": [
         2074.0,
@@ -444,22 +444,22 @@
     {
       "code": "2638",
       "name": "グローバルX ロボティクス＆AI-日本株式 ETF",
-      "price": 2016.0,
-      "sma25": 2364.3,
-      "sma75": 2580.3,
-      "rsi14": 26.4,
-      "volume_ratio": 1.72,
-      "technical": 35,
-      "flow": 63,
-      "score": 42,
+      "price": 2142.0,
+      "sma25": 2345.0,
+      "sma75": 2573.3,
+      "rsi14": 35.8,
+      "volume_ratio": 0.86,
+      "technical": 44,
+      "flow": 41,
+      "score": 43,
       "action": "監視",
       "buy_zone": [
-        2293.4,
-        2388.0
+        2274.7,
+        2368.5
       ],
       "take": 3081.5,
-      "stop": 1814.4,
-      "upside": 53
+      "stop": 1927.8,
+      "upside": 44
     },
     {
       "code": "2760",
@@ -489,9 +489,9 @@
       "sma75": 3230.5,
       "rsi14": 38.5,
       "volume_ratio": 1.27,
-      "technical": 46,
+      "technical": 45,
       "flow": 52,
-      "score": 48,
+      "score": 47,
       "action": "監視",
       "buy_zone": [
         2978.9,
@@ -717,9 +717,9 @@
         76.4,
         79.5
       ],
-      "take": 529.2,
+      "take": 507.4,
       "stop": 45.0,
-      "upside": 958
+      "upside": 915
     },
     {
       "code": "3778",
@@ -1729,7 +1729,7 @@
       "sma75": 2848.6,
       "rsi14": 29.5,
       "volume_ratio": 1.4,
-      "technical": 38,
+      "technical": 37,
       "flow": 55,
       "score": 42,
       "action": "監視",
@@ -2037,7 +2037,7 @@
         1408.4,
         1466.4
       ],
-      "take": 2024.1,
+      "take": 2021.0,
       "stop": 1098.5,
       "upside": 66
     },
@@ -2177,9 +2177,9 @@
         4667.0,
         4859.4
       ],
-      "take": 6316.0,
+      "take": 6257.8,
       "stop": 3802.5,
-      "upside": 49
+      "upside": 48
     },
     {
       "code": "6752",
@@ -2529,9 +2529,9 @@
       "sma75": 2258.4,
       "rsi14": 39.3,
       "volume_ratio": 1.08,
-      "technical": 45,
+      "technical": 44,
       "flow": 47,
-      "score": 46,
+      "score": 45,
       "action": "監視",
       "buy_zone": [
         2032.7,
@@ -2997,9 +2997,9 @@
         53.1,
         55.3
       ],
-      "take": 577.5,
+      "take": 472.5,
       "stop": 38.7,
-      "upside": 1243
+      "upside": 999
     },
     {
       "code": "8154",
